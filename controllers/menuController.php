@@ -9,8 +9,8 @@
 class menuController extends Controller {
 
     public function index(){
-        $examples=$this->model->load();
-        $this->setResponce($examples);
+        $menu=$this->model->load();
+        $this->setResponce($menu);
     }
 
 }
