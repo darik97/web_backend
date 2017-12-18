@@ -12,7 +12,7 @@ class Model
     public function load($id = false)
     {
         $data = file_get_contents($this->dataFileName);
-        $data = json_decode($data);
+        $data = json_decode($data, true);
 
         if ($id === false) {
             return $data;
@@ -28,7 +28,7 @@ class Model
     public function create(array $item)
     {
         $data = file_get_contents($this->dataFileName);
-        $data = json_decode($data);
+        $data = json_decode($data, true);
         array_push($data, $item);
         return file_put_contents($this->dataFileName, json_encode($data));
     }
@@ -37,7 +37,7 @@ class Model
     public function save($id, $item)
     {
         $data = file_get_contents($this->dataFileName);
-        $data = json_decode($data);
+        $data = json_decode($data, true);
         if (array_key_exists($id, $data)) {
             $data[$id] = $item;
         }
@@ -48,7 +48,7 @@ class Model
     public function delete($id)
     {
         $data = file_get_contents($this->dataFileName);
-        $data = json_decode($data);
+        $data = json_decode($data, true);
         if (array_key_exists($id, $data)) {
             unset($data[$id]);
         }

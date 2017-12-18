@@ -6,11 +6,13 @@
  * Time: 21:57
  */
 
-class menuController extends Controller {
+class menuController extends Controller
+{
 
-    public function index(){
-        $menu=$this->model->load();
-        $this->setResponce($menu);
+    public function index()
+    {
+        $menu = $this->model->load();
+        $this->setResponse($menu);
     }
 
 }

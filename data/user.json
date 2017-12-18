@@ -1,5 +1,17 @@
 [
-  {"id":"1", "name":"Player1", "score":"1000"},
-  {"id":"2", "name":"Player2", "score":"1100"},
-  {"id":"3", "name":"Player3", "score":"1200"}
+  {
+    "id": "1",
+    "name": "Player1",
+    "score": "1000"
+  },
+  {
+    "id": "2",
+    "name": "Player2",
+    "score": "1100"
+  },
+  {
+    "id": "3",
+    "name": "Player3",
+    "score": "1200"
+  }
 ]
