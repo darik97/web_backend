@@ -1,9 +1,7 @@
 <div class="top">
 <ol>
-    <li>Player1</li>
-    <li>Player2</li>
-    <li>Player3</li>
-    <li>Player4</li>
-    <li>Player5</li>
+    <li ng-repeat="user in users | orderBy: 'score': !reverse |limitTo: 5">
+        {{user.name}}   {{user.score}}
+    </li>
 </ol>
 </div>

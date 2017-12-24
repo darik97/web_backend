@@ -15,9 +15,6 @@ app.config(function ($routeProvider) {
     .controller('MenuController',
         function ($scope, $http) {
             $http.get("?controller=menu")
-            // .success(function (data) {
-            //     $scope.items = data;
-            // })
                 .then(function success(response) {
                     $scope.items = response.data;
                 })
