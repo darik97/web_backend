@@ -1,0 +1,8 @@
+<div class="info" ng-controller="GameController">
+    <h2>Total score: {{totalScore}}</h2>
+    <p>Enter your name:</p>
+    <form name="inputform">
+        <p><input name="username" ng-model="username"></p>
+        <button ng-click="sendResult()">Send result</button>
+    </form>
+</div>

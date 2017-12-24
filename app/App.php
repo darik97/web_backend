@@ -75,6 +75,12 @@ class App
             $this->response = false;
         }
         // возвращяем результат
+
+        if ($this->controller != "index") {
+            header('Content-Type: application/json');
+            $this->response = json_encode($this->response);
+        }
+
         return $this->response;
     }
 }

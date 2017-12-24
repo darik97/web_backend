@@ -1,0 +1,12 @@
+<nav class="header" ng-controller="MenuController">
+    <div class="header__logo">
+        <a href="#/start"><h2>GameName</h2></a>
+    </div>
+    <div class="header__menu">
+        <ul class="header__list">
+            <li class="header__item" ng-repeat="item in items">
+                <a  href={{item.href}}>{{item.title}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
