@@ -5,7 +5,9 @@
     <div class="header__menu">
         <ul class="header__list">
             <li class="header__item" ng-repeat="item in items">
-                <a  href={{item.href}}>{{item.title}}</a>
+                <a  href={{item.href}}>
+                    <div> {{item.title}}</div>
+                </a>
             </li>
         </ul>
     </div>

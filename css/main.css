@@ -81,6 +81,24 @@ a .header__item:hover {
     list-style-position: inside;
 }
 
+.info {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.info_item {
+    float: left;
+    padding: 5px;
+    margin-right: -2px;
+    width: 30%;
+    text-align: center;
+    min-width: 100px;
+}
+
 .object {
+    size: 50px;
+}
+
+.object__content {
     background-image: url("../images/cockroach.png");
 }
